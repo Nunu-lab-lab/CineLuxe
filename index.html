@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineLuxe</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between d-flex fixed-top">
+        <div class="left d-flex flex-lg-row flex-column">
+          <div class="logos d-flex">
+            <a class="navbar-brand" href="#">
+              <img src="photos/fotor-ai-2025021422433.jpg" class="rounded-circle" alt="logo" width="35">
+            </a>
+            <a class="navbar-brand shadow-sm px-1" href="#">Movie Vault</a>
+          </div> <!-- logos -->
+          <div class="collapse navbar-collapse w-100" id="collapsibleNavbar">
+            <div class="d-flex flex-column">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Tickets Office</a>
+                </li>
+                <li class="nav-item dropdown border border-secondary rounded px-2 px-lg-0">
+                  <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#">Film vault</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Silent Classics</a>
+                    <a class="dropdown-item" href="#">Noir Nights</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Horror Reels</a>
+                    <a class="dropdown-item" href="#">Comedy Gold</a>
+                    <a class="dropdown-item" href="#">Egyptian Gems</a>
+                    <a class="dropdown-item" href="#">Old is Gold</a>
+                    <a class="dropdown-item" href="#">More...</a>
+                  </div> <!-- dropdown-menu -->
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Coming Soon</a>
+                </li>
+                </ul>
+                <div class="search-login-countainer d-lg-none d-flex align-items-end">
+                  <form class="form-inline">
+                    <input class="form-control" type="text" placeholder="Search">
+                    <button class="btn btn-danger" type="submit">Search</button>
+                    <div class="login">
+                      <button class="btn btn-danger ml-1" type="button" data-toggle="modal" data-target="#myModal">Login</button>
+                    </div> <!-- login -->
+                  </form>
+                </div> <!-- navbarSearch -->
+            </div> <!-- flex-column -->
+          </div> <!-- collapse -->
+        </div> <!-- left -->
+        <button class="navbar-toggler align-self-start" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" title="menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="right d-lg-flex d-none">
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-danger" type="submit">Search</button>
+          </form>
+          <div class="login">
+            <button class="btn btn-danger ml-1" type="button" data-toggle="modal" data-target="#myModal">Login</button>
+          </div> <!-- login -->
+        </div> <!-- right -->
+      </nav>
+    </header>
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-secondary text-light">
+            <h5 class="modal-title">Login</h5>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div> <!-- modal-header -->
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="username">Email:</label>
+              <input type="text" class="form-control" title="email">
+              <p class="form-text text-muted">We will never share your email with anyone else</p>
+            </div> <!-- form-group -->
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input type="password" class="form-control" title="password">
+            </div> <!-- form-group -->
+            <div class="form-group form-check custom-switch">
+              <input type="checkbox" class="custom-control-input bg-dark" id="switch1">
+              <label class="custom-control-label" for="switch1">Remember me</label>
+            </div> <!-- custom-control -->
+          </div> <!-- modal-body -->
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-danger">Login</button>
+            <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+          </div> <!-- modal-footer -->
+        </div> <!-- modal-content -->
+      </div> <!-- modal-dialog -->
+    </div> <!-- modal -->
+    <!------------------------------------------------------------------------------------------------------------>
+    <section>
+      <div class="homeContainer">
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+          <ul class="carousel-indicators pb-3">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+            <li data-target="#carousel" data-slide-to="3"></li>
+          </ul>
+  
+          <div class="carousel-inner">
+            <div class="carousel-item active w-100">
+              <img src="photos/Casablanca.jpg" alt="Casablanca">
+              <div class="carousel-caption pb-5">
+                <h3>Casablanca</h3>
+                <p>"And remember, this gun is pointed right at your heart."</p>
+                <button type="button" class="btn btn-outline-light">Get Tickets</button>
+              </div>
+            </div>
+            <div class="carousel-item w-100">
+              <img src="photos/Dr. Stranglove.jpg" alt="Modern Times">
+              <div class="carousel-caption pb-5">
+                <h3>Dr. Stranglove</h3>
+                <p>"Gentlemen, you can't fight in here! This is the War Room!"</p>
+                <button type="button" class="btn btn-outline-light">Get Tickets</button>
+              </div>
+            </div>
+            <div class="carousel-item w-100">
+              <img src="photos/oppenheimer.jpg" alt="Oppenheimer">
+              <div class="carousel-caption pb-5">
+                <h3>Oppenheimer</h3>
+                <p>"You can convince anyone with anything. Even yourself."</p>
+                <button type="button" class="btn btn-outline-light">Get Tickets</button>
+              </div>
+            </div>
+            <div class="carousel-item w-100">
+              <img src="photos/La Dolce Vita.jpg" alt="La Dolce Vita">
+              <div class="carousel-caption pb-5">
+                <h3>La Dolce Vita</h3>
+                <p>"You are everything... everything!"</p>
+                <button type="button" class="btn btn-outline-light">Get Tickets</button>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#carousel" data-slide="prev" title="previous">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#carousel" data-slide="next" title="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+        <div class="social-links align-items-center d-flex flex-column mr-4">
+          <a href="#" title="facebook" class="text-secondary"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="#" title="twitter" class="text-secondary"><i class="fa-brands fa-square-twitter"></i></a>
+          <a href="#" title="instagram" class="text-secondary"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="#" title="youtube" class="text-secondary"><i class="fa-brands fa-square-youtube"></i></a>
+          <a href="#" title="hotline" class="text-secondary"><i class="fa-solid fa-square-phone"></i></a>
+        </div>
+      </div>
+    </section>
+    <!------------------------------------------------------------------------------------------------------------>
+    <section>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <div class="welcomeMessage">
+            <h2>WELCOME</h2>
+            <p class="lead">Welcome to CineLuxe, your ultimate destination for an unforgettable movie experience! From timeless classics to the latest blockbusters, book your tickets with ease and enjoy the magic of cinema. Your perfect movie night starts here!</p>
+            <button type="button" class="btn btn-outline-danger">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------------------------------------------------------------------------------------------------------>
+    <section>
+      <div id="accordion" class="pb-4">
+        <div class="title p-4 bg-gradient bg-dark shadow mb-2">
+          <h2 class="text-center text-danger">The Art of Monochrome</h2>
+        </div>
+        <div class="card">
+          <div class="card-header w-100">
+            <a class="collapsed card-link w-100 d-block text-dark" data-toggle="collapse" href="#collapseOne">
+              The Timeless Charm of Black & White
+              <span class="float-right"><i class="fa-solid fa-chevron-down"></i></span>
+            </a>
+          </div>
+          <div id="collapseOne" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              <small>
+                Long before vibrant colors filled the silver screen, filmmakers mastered the art of storytelling using only light and shadow. Black-and-white films capture emotions in a way that color often cannot—focusing on expressions, atmosphere, and raw cinematic beauty. At [Your Cinema Name], we bring these masterpieces back to life, inviting you to experience the magic of classic cinema like never before.
+              </small>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="card-header w-100">
+            <a class="collapsed card-link w-100 d-block text-dark" data-toggle="collapse" href="#collapseTwo">
+              Why Choose Black & White in a Colorful World?
+              <span class="float-right"><i class="fa-solid fa-chevron-down"></i></span>
+            </a>
+          </div>
+          <div id="collapseTwo" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              <small>
+                In an era of high-definition visuals and CGI, black-and-white films offer something rare—purity. Without the distraction of color, viewers focus more on facial expressions, body language, and the subtleties of filmmaking. These films remind us that cinema is more than just entertainment; it's an art form. At [Your Cinema Name], we invite you to step into a world where every shadow tells a story.
+              </small>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card">
+          <div class="card-header w-100">
+            <a class="collapsed card-link w-100 d-block text-dark" data-toggle="collapse" href="#collapseThree">
+              Step into the Golden Age
+              <span class="float-right"><i class="fa-solid fa-chevron-down"></i></span>
+            </a>
+          </div>
+          <div id="collapseThree" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+              <small>
+                At CineLuxe, we don't just screen films—we recreate an experience. From the moment you enter, you're transported back to the golden age of Hollywood. Velvet curtains, vintage posters, and the soft hum of an old gramophone set the mood. Our theater isn't just about watching movies; it's about reliving an era where every film was a masterpiece.
+              </small>
+            </div>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </section>
+    <!------------------------------------------------------------------------------------------------------------>
+    <section>
+      <div class="cinema-memories-container">
+        <div class="letter-container">
+          <div class="title p-lg-4 p-3 bg-gradient bg-dark text-light mt-3">
+            <h2 class="text-center">A Letter to the Golden Age</h2>
+          </div> <!-- title -->
+          <div class="letter-body bg-light py-3">
+            <div class="letter-elements container">
+              <p>If you could send a message to the legendary actors and filmmakers of the black-and-white era, what would you say?</p>
+              <button type="button" class="btn btn-outline-danger mb-3" data-toggle="tooltip" title="Save" data-placement="bottom">Save your response</button>
+              <form action="">
+                <textarea class="w-100 p-2" rows="5" name="letter" id="goldenAgeMessage" placeholder="Dear legends of the silver screen, your art still inspires us today..."></textarea>
+              </form>
+            </div> <!-- letter-elements -->
+          </div> <!-- letter-body -->
+        </div> <!-- letter-container -->
+        <div class="letter-container">
+          <div class="title p-lg-4 p-3 bg-gradient bg-dark text-light mt-3">
+            <h2 class="text-center">Rename a Classic</h2>
+          </div> <!-- title -->
+          <div class="letter-body bg-light py-3">
+            <div class="letter-elements container">
+              <p>Ever thought of a better title for an old classic? Give a legendary film a new name!</p>
+              <button type="button" class="btn btn-outline-danger mb-3" data-toggle="tooltip" title="Save" data-placement="bottom">Save your response</button>
+              <form action="">
+                <textarea class="w-100 p-2" rows="5" name="letter" id="classicTitleRename" placeholder="Example: 'Casablanca' → 'Love in Wartime'"></textarea>
+              </form>
+            </div> <!-- letter-elements -->
+          </div> <!-- letter-body -->
+        </div> <!-- letter-container -->
+        <div class="letter-container">
+          <div class="title p-lg-4 p-3 bg-gradient bg-dark text-light mt-3">
+            <h2 class="text-center">Your Cinema Memories</h2>
+          </div> <!-- title -->
+          <div class="letter-body bg-light py-3">
+            <div class="letter-elements container">
+              <p>Do you remember the first black-and-white movie you watched? Share your experience!</p>
+              <button type="button" class="btn btn-outline-danger mb-3 saveBtn" data-toggle="tooltip" title="Save" data-placement="bottom">Save your response</button>
+              <form action="">
+                <textarea class="w-100 p-2" rows="5" name="letter" id="firstBWMovie" placeholder="I remember watching [Movie Name] for the first time... it was magical!"></textarea>
+              </form>
+            </div> <!-- letter-elements -->
+          </div> <!-- letter-body -->
+        </div> <!-- letter-container -->
+        <hr>
+      </div> <!-- cinema-memories-container -->
+    </section>
+
+    <section>
+      <div class="container-fluid w-100 pb-5 pt-3">
+        <div class="fixed-bg"></div>
+        <div class="title bg-dark text-danger p-3">
+          <h2 class="text-center">Curtain Call: the Best of The Cinema</h2>
+        </div>
+      </div>
+      <div class="container movie-container">
+        <div class="row justify-content-around">
+          <div class="col-lg-4 col-12 mb-4">
+            <div class="card shadow">
+              <img class="card-img-top" src="photos/card1.jpg" alt="Casablanca">
+              <div class="card-body cinema-cards row align-items-center">
+                <div class="card-description col">
+                  <h4 class="card-title">Casablanca (1942)</h4>
+                  <p class="card-text">Romance/Drama</p>
+                </div>
+                <a href="#" class="btn btn-danger col-auto mb-3 mr-2">Get Tickets</a>
+              </div>
+            </div> <!-- card -->
+          </div>
+          <div class="col-lg-4 col-12 mb-4">
+            <div class="card shadow">
+              <img class="card-img-top" src="photos/card2.jpg" alt="Citizen Kane">
+              <div class="card-body cinema-cards row align-items-center">
+                <div class="card-description col">
+                  <h4 class="card-title">Citizen Kane (1941)</h4>
+                  <p class="card-text">Drama/Mystery</p>
+                </div>
+                <a href="#" class="btn btn-danger col-auto mb-3 mr-2">Get Tickets</a>
+              </div>
+            </div> <!-- card -->
+          </div>
+          <div class="col-lg-4 col-12 mb-4">
+            <div class="card shadow">
+              <img class="card-img-top" src="photos/card3.jpg" alt="Casablanca">
+              <div class="card-body cinema-cards row align-items-center">
+                <div class="card-description col">
+                  <h4 class="card-title">Gone with the Wind</h4>
+                  <p class="card-text">Romance/Drama</p>
+                </div>
+                <a href="#" class="btn btn-danger col-auto mb-3 mr-2">Get Tickets</a>
+              </div>
+            </div> <!-- card -->
+          </div> 
+        </div>
+        <div class="row justify-content-around">
+          <div class="col-lg-4 col-12 mb-4">
+            <div class="card shadow">
+              <img class="card-img-top" src="photos/card4.jpg" alt="Casablanca">
+              <div class="card-body cinema-cards row align-items-center">
+                <div class="card-description col">
+                  <h4 class="card-title">Psycho (1960)</h4>
+                  <p class="card-text">Horror/Thriller</p>
+                </div>
+                <a href="#" class="btn btn-danger col-auto mb-3 mr-2">Get Tickets</a>
+              </div>
+            </div> <!-- card -->
+          </div> <!-- col -->
+          <div class="col-lg-4 col-12 mb-4">
+            <div class="card shadow">
+              <img class="card-img-top" src="photos/card5.jpg" alt="Casablanca">
+              <div class="card-body cinema-cards row align-items-center">
+                <div class="card-description col">
+                  <h4 class="card-title">12 Angry Men (1957)</h4>
+                  <p class="card-text">Drama</p>
+                </div>
+                <a href="#" class="btn btn-danger col-auto mb-3 mr-2">Get Tickets</a>
+              </div>
+            </div> <!-- card -->
+          </div>
+          <div class="col-lg-4 col-12 mb-4">
+            <div class="card shadow">
+              <img class="card-img-top" src="photos/card6.jpg" alt="Casablanca">
+              <div class="card-body cinema-cards row align-items-center">
+                <div class="card-description col">
+                  <h4 class="card-title">Metropolis (1927)</h4>
+                  <p class="card-text">Sci-Fi</p>
+                </div>
+                <a href="#" class="btn btn-danger col-auto mb-3 mr-2">Get Tickets</a>
+              </div>
+            </div> <!-- card -->
+          </div>
+        </div>
+        <div class="row justify-content-around">
+          <div class="col-lg-4 col-12 mb-4">
+            <div class="card shadow">
+              <img class="card-img-top" src="photos/card7.jpg" alt="Casablanca">
+              <div class="card-body cinema-cards row align-items-center">
+                <div class="card-description col">
+                  <h4 class="card-title">Singin' in the Rain</h4>
+                  <p class="card-text">Musical/Comedy</p>
+                </div>
+                <a href="#" class="btn btn-danger col-auto mb-3 mr-2">Get Tickets</a>
+              </div>
+            </div> <!-- card -->
+          </div>
+          <div class="col-lg-4 col-12 mb-4">
+            <div class="card shadow">
+              <img class="card-img-top" src="photos/card8.jpg" alt="Casablanca">
+              <div class="card-body cinema-cards row align-items-center">
+                <div class="card-description col">
+                  <h4 class="card-title">Some Like It Hot (1959)</h4>
+                  <p class="card-text">Comedy/Romance</p>
+                </div>
+                <a href="#" class="btn btn-danger col-auto mb-3 mr-2">Get Tickets</a>
+              </div>
+            </div> <!-- card -->
+          </div>
+        </div>
+      </div> <!-- movie-container -->
+      <div class="ending-img pb-2"></div>
+      <hr>
+    </section>
+
+    <section>
+      <div class="honoring-section my-5">
+        <div class="jumbotron jumbotron-fluid p-4">
+          <div class="container">
+            <div class="title text-center">
+              <h2>Legends Behind the lens</h2>
+            </div> <!-- title -->
+          </div> <!-- container -->
+        </div> <!-- jumbotron -->
+        <div class="row container mx-auto">
+          <div class="col-lg-4 col-12 mb-4">
+            <div class="card">
+              <div class="card-overlay"></div>
+              <div class="card-img-overlay text-light">
+                <h4>A Visionary Director</h4>
+                <div class="date d-flex align-items-center">
+                  <i class="fa-solid fa-clock"></i>
+                  <p class="ml-1 mb-1">1940s</p>
+                </div> <!-- date -->
+              </div> <!-- card-img-overlay -->
+              <img class="card-img-top" src="photos/alfred1.png" alt="Alfred Hitchcock">
+              <div class="card-img-overlay d-flex justify-content-end flex-column text-light">
+                <img src="photos/alfredHitchcock.jpg" alt="Alfred Hitchcock" class="rounded-circle">
+                <h4 class="card-title">Alfred Hitchcock</h4>
+                <p class="card-text">Filmmaker</p>
+              </div> <!-- card-img-overlay -->
+            </div> <!-- card -->
+          </div> <!-- col -->
+          <div class="col-lg-4 col-12 mb-4">
+            <div class="card">
+              <div class="card-overlay"></div>
+              <div class="card-img-overlay text-light">
+                <h4>A Screen Legend</h4>
+                <div class="date d-flex align-items-center">
+                  <i class="fa-solid fa-clock"></i>
+                  <p class="ml-1 mb-1">1950s</p>
+                </div> <!-- date -->
+              </div> <!-- card-img-overlay -->
+              <img class="card-img-top" src="photos/Audrey1.jpg" alt="Audrey Hepburn">
+              <div class="card-img-overlay d-flex justify-content-end flex-column text-light">
+                <img src="photos/Audrey.png" alt="Audrey" class="rounded-circle">
+                <h4 class="card-title">Audrey Hepburn</h4>
+                <p class="card-text">Actress</p>
+              </div> <!-- card-img-overlay -->
+            </div> <!-- card -->
+          </div> <!-- col -->
+          <div class="col-lg-4 col-12 mb-4">
+            <div class="card">
+              <div class="card-overlay"></div>
+              <div class="card-img-overlay text-light">
+                <h4>Hollywood's Everyman</h4>
+                <div class="date d-flex align-items-center">
+                  <i class="fa-solid fa-clock"></i>
+                  <p class="ml-1 mb-1">1946s</p>
+                </div> <!-- date -->
+              </div> <!-- card-img-overlay -->
+              <img class="card-img-top" src="photos/James.jpg" alt="James Stewart">
+              <div class="card-img-overlay d-flex justify-content-end flex-column text-light">
+                <img src="photos/JamesStewart.png" alt="James Stewart" class="rounded-circle">
+                <h4 class="card-title">James Stewart</h4>
+                <p class="card-text">Actor</p>
+              </div> <!-- card-img-overlay -->
+            </div> <!-- card -->
+          </div> <!-- col -->
+        </div> <!-- row -->
+      </div> <!-- honoring-section -->
+    </section>
+
+    <section>
+      <div class="title text-center text-light bg-dark p-3 mt-5">
+        <h2>Today's Picks</h2>
+      </div>
+      <div class="container p-5">
+        <div class="media border mb-3 d-flex flex-column flex-lg-row shadow rounded">
+          <img src="photos/card1.jpg" alt="John Doe" class="mr-3 h-100 w-25">
+          <div class="media-body p-3 d-flex flex-column justify-content-between media-body-normal">
+            <div class="media-body-content">
+              <h4>Casablanca</h4>
+              <div class="date pb-lg-3">
+                <div class="date-text pb-1">
+                  <small><i class="fa-solid fa-calendar mr-1"></i>Released on November 26, 1942</small>
+                </div>
+                <div class="line bg-danger"></div>
+              </div>
+              <p>In the midst of WWII, an American expat in Morocco must choose between love and duty when his old flame walks into his café, seeking his help to escape the Nazis. A timeless romance filled with unforgettable lines and suspense.</p>
+            </div> <!-- media-body-content -->
+            <div class="list-group list-group-horizontal w-50 text-center pb-4">
+              <a href="#" class="list-group-item list-group-item-action list-group-item-dark w-25 p-1 mr-2 rounded"><i class="fa-solid fa-bookmark mr-1"></i>Save</a>
+              <a href="#" class="list-group-item list-group-item-action list-group-item-dark w-25 p-1 mr-2 rounded"><i class="fa-solid fa-clock mr-1"></i>1h 42m</a>
+              <a href="#" class="list-group-item list-group-item-action list-group-item-dark w-25 p-1 rounded"><i class="fa-solid fa-play mr-1"></i>Play Trailer</a>
+            </div> <!-- list-group -->
+          </div> <!-- media-body -->
+        </div> <!-- media -->
+
+        <div class="media border mb-3 d-flex flex-column-reverse flex-lg-row media-reverse shadow rounded">
+          <div class="media-body p-3 d-flex flex-column justify-content-between media-body-reverse">
+            <div class="media-body-content">
+              <h4>Singin' in the Rain</h4>
+              <div class="date pb-lg-3">
+                <div class="date-text pb-1">
+                  <small><i class="fa-solid fa-calendar mr-1"></i>Released on March 27, 1952</small>
+                </div>
+                <div class="line bg-danger"></div>
+              </div>
+              <p>In the golden age of Hollywood, silent films are fading, and "talkies" are taking over. When a famous silent film star struggles to transition into sound, a talented young actress might just be the key to saving his career—and winning his heart. Packed with dazzling dance numbers, unforgettable songs, and timeless comedy, Singin' in the Rain is a joyful celebration of music, love, and the magic of the movies.</p>
+            </div> <!-- media-body-content -->
+            <div class="list-group list-group-horizontal w-50 text-center pb-4">
+              <a href="#" class="list-group-item list-group-item-action list-group-item-dark w-25 p-1 mr-2 rounded"><i class="fa-solid fa-bookmark mr-1"></i>Save</a>
+              <a href="#" class="list-group-item list-group-item-action list-group-item-dark w-25 p-1 mr-2 rounded"><i class="fa-solid fa-clock mr-1"></i>1h 43m</a>
+              <a href="#" class="list-group-item list-group-item-action list-group-item-dark w-25 p-1 rounded"><i class="fa-solid fa-play mr-1"></i>Play Trailer</a>
+            </div> <!-- list-group -->
+          </div> <!-- media-body -->
+          <img src="photos/card7.jpg" alt="Singin' in the Rain" class="mr-3 h-100 w-25">
+        </div> <!-- media-reverse -->
+
+        <div class="media border mb-3 d-flex flex-column flex-lg-row shadow rounded">
+          <img src="photos/Godfather.png" alt="John Doe" class="mr-3 h-100 w-25">
+          <div class="media-body p-3 d-flex flex-column justify-content-between media-body-normal">
+            <div class="media-body-content">
+              <h4>The Godfather</h4>
+              <div class="date pb-lg-3">
+                <div class="date-text pb-1">
+                  <small><i class="fa-solid fa-calendar mr-1"></i>Released on March 24, 1972</small>
+                </div>
+                <div class="line bg-danger"></div>
+              </div>
+              <p>When the powerful Corleone crime family faces betrayal and shifting loyalties, the youngest son, Michael, is drawn into a world of power, violence, and family duty. As he rises through the ranks, he must choose between the life he wanted and the legacy he can't escape. A cinematic masterpiece of loyalty, ambition, and ruthless power, The Godfather is one of the greatest films ever made.</p>
+            </div> <!-- media-body-content -->
+            <div class="list-group list-group-horizontal w-50 text-center pb-4">
+              <a href="#" class="list-group-item list-group-item-action list-group-item-dark w-25 p-1 mr-2 rounded"><i class="fa-solid fa-bookmark mr-1"></i>Save</a>
+              <a href="#" class="list-group-item list-group-item-action list-group-item-dark w-25 p-1 mr-2 rounded"><i class="fa-solid fa-clock mr-1"></i>2h 55m</a>
+              <a href="#" class="list-group-item list-group-item-action list-group-item-dark w-25 p-1 rounded"><i class="fa-solid fa-play mr-1"></i>Play Trailer</a>
+            </div> <!-- list-group -->
+          </div> <!-- media-body -->
+        </div> <!-- media -->
+
+        <div class="media border mb-3 d-flex flex-column-reverse flex-lg-row media-reverse shadow rounded">
+          <div class="media-body p-3 d-flex flex-column justify-content-between media-body-reverse">
+            <div class="media-body-content">
+              <h4>The Twilight Zone</h4>
+              <div class="date pb-lg-3">
+                <div class="date-text pb-1">
+                  <small><i class="fa-solid fa-calendar mr-1"></i>Released on October 2, 1959</small>
+                </div>
+                <div class="line bg-danger"></div>
+              </div>
+              <p>A groundbreaking anthology series that takes viewers into a world where the ordinary meets the extraordinary. Each episode presents a unique story filled with mystery, suspense, and thought-provoking themes, exploring human nature, society, and the unknown. From eerie sci-fi scenarios to unsettling psychological dilemmas, the show blends fantasy, horror, and morality tales, often leaving audiences questioning reality itself.</p>
+            </div> <!-- media-body-content -->
+            <div class="list-group list-group-horizontal w-50 text-center pb-4">
+              <a href="#" class="list-group-item list-group-item-action list-group-item-dark w-25 p-1 mr-2 rounded"><i class="fa-solid fa-bookmark mr-1"></i>Save</a>
+              <a href="#" class="list-group-item list-group-item-action list-group-item-dark w-25 p-1 mr-2 rounded"><i class="fa-solid fa-clock mr-1"></i>72h 30m</a>
+              <a href="#" class="list-group-item list-group-item-action list-group-item-dark w-25 p-1 rounded"><i class="fa-solid fa-play mr-1"></i>Play Trailer</a>
+            </div> <!-- list-group -->
+          </div> <!-- media-body -->
+          <img src="photos/twilightzone.jpg" alt="The Twilight Zone" class="mr-3 h-100 w-25">
+        </div> <!-- media-reverse -->
+      </div> <!-- container -->
+    </section>
+
+    <section>
+      <div class="title text-center pb-3">
+        <h2>Connect & Explore</h2>
+      </div>
+      <div class="container d-flex socials flex-column flex-lg-row justify-content-around align-content-center pb-5">
+        <div class="social4 border shadow px-5 py-3 text-center w-75 mx-lg-4 mx-5 my-2">
+          <h3>Join Us</h3>
+          <a href="https://www.facebook.com" rel="noopener" title="facebook" class="display-4 text-primary"><i class="fa-brands fa-square-facebook mb-3"></i></a>
+          <h5>Visit Now</h5>
+        </div>
+        <div class="social1 border shadow px-5 py-3 text-center w-75 mx-lg-4 mx-5 my-2">
+          <h3>Subscribe</h3>
+          <a href="https://www.youtube.com" rel="noopener" title="YouTube" class="display-4 text-danger"><i class="fa-brands fa-youtube mb-3"></i></a>
+          <h5>Visit Now</h5>
+        </div>
+        <div class="social2 border shadow px-5 py-3 text-center w-75 mx-lg-4 mx-5 my-2">
+          <h3>Follow Us</h3>
+          <a href="https://www.instagram.com" rel="noopener" title="instagram" class="display-4 instagram-icon"><i class="fa-brands fa-instagram mb-3"></i></a>
+          <h5>Visit Now</h5>
+        </div>
+        <div class="social3 border shadow px-5 py-3 text-center w-75 mx-lg-4 mx-5 my-2">
+          <h3>Get App</h3>
+          <a href="https://play.google.com" rel="noopener" title="Google Play" class="display-4 text-info"><i class="fa-brands fa-google-play mb-3"></i></a>
+          <h5>Visit Now</h5>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container-fluid bg-dark text-light py-4 px-0">
+        <div class="footer-links d-flex flex-column flex-lg-row justify-content-lg-around align-items-center pb-3">
+          <div class="footer-link w-75 mx-2">
+            <div class="white-line mb-1"></div>
+            <div class="title d-flex justify-content-center p-3">
+              <img src="photos/fotor-ai-2025021422433.jpg" class="rounded-circle mr-2" alt="logo" width="35">
+              <h4>The Studio</h4>
+            </div> <!-- title -->
+            <div class="white-line mb-3"></div>
+            <div class="links text-center">
+              <ul class="list-unstyled">
+                <li>Telephone: 00000000000</li>
+                <li>Address: Egypt</li>
+                <li>Fax: 00000000000</li>
+              </ul>
+            </div> <!-- links -->
+          </div> <!-- footer-link -->
+          <div class="footer-link w-75 mx-2">
+            <div class="white-line mb-1"></div>
+            <div class="title d-flex justify-content-center p-3">
+              <img src="photos/fotor-ai-2025021422433.jpg" class="rounded-circle mr-2" alt="logo" width="35">
+              <h4>Now Showing</h4>
+            </div> <!-- title -->
+            <div class="white-line mb-3"></div>
+            <div class="links text-center">
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-danger text-decoration-none">Explore Our Collection</a></li>
+                <li><a href="#" class="text-danger text-decoration-none">Step Into the Spotlight</a></li>
+                <li><a href="#" class="text-danger text-decoration-none">Cinema Is Forever</a></li>
+              </ul>
+            </div> <!-- links -->
+          </div> <!-- footer-link -->
+          <div class="footer-link w-75 mx-2">
+            <div class="white-line mb-1"></div>
+            <div class="title d-flex justify-content-center p-3">
+              <img src="photos/fotor-ai-2025021422433.jpg" class="rounded-circle mr-2" alt="logo" width="35">
+              <h4>Our Reel Vision</h4>
+            </div> <!-- title -->
+            <div class="white-line mb-3"></div>
+            <div class="links text-center">
+              <ul class="list-unstyled">
+                <li>Movies for Everyone</li>
+                <li>Bringing Classics to Life</li>
+                <li>A Story Worth Watching</li>
+              </ul>
+            </div> <!-- links -->
+          </div> <!-- footer-link -->
+        </div> <!-- footer-links -->
+        <div class="white-line"></div>
+        <div class="footer-copyright py-3 px-2">
+          <h5 class="text-center">Copyright &copy; 2023 CineLuxe / All Rights Reserved</h5>
+        </div> <!-- footer-copyright -->
+        <div class="white-line mb-5"></div>
+      </div>
+    </footer>
+
+    <script src="javascript/script.js"></script>
+    <script src="javascript/config.json"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+</body>
+</html>
