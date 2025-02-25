@@ -4,12 +4,6 @@
         top: 10px;
         right: 15px;
     }
-    .navbar{
-        position: relative;
-    }
-    .search-login-countainer button{
-        margin-top: 10px;
-    }
     .navbar-collapse .dropdown{
         width: 30%;
         height: 43px;
@@ -22,12 +16,10 @@
     }
     .media{
         height: 350px;
-        overflow: hidden;
     }
     .media img{
         width: 100% !important;
         height: 60% !important;
-        object-fit: cover;
     }
     .media img, .media-body-normal{
         transform: translateY(-50px);
@@ -35,49 +27,32 @@
     .media-reverse img,.media-body-reverse{
         transform: translateY(150px);
     }
-    .line{
-        width: 25% !important;
-    }
 }
 .carousel-item{
     height: 100vh;
 }
-.carousel-caption{
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 20px;
-}
-.carousel-item img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.carousel-caption, .card-overlay{
+    background-color: rgba(0, 0, 0, 0.6);
 }
 .social-links{
-    font-size: 30px;
-    width: 50px;
-    position: fixed;
     right: 0;
     bottom: 0;
     z-index: 999;
 }
+.fixed-bg, .ending-img{
+    height: 250px;
+    background-size: cover;
+}
 .fixed-bg{
     background: url(../photos/bg.jpg) no-repeat center center fixed;
-    height: 250px;
-    background-size: cover;
 }
 .ending-img{
-    background: url(../photos/bg6.gif) no-repeat center center fixed;
-    height: 250px;
-    background-size: cover;
+    background: url(../photos/fotor-ai-20250225235432.jpg) no-repeat center center fixed;
 }
 .movie-container .card img{
-    width: 100%;
     height: 375px;
-    object-fit: cover;
 }
-.card-title{
-    font-size: 18px;
-}
-.movie-container .card{
+.movie-container .card, .honoring-section .card, .navbar{
     position: relative;
 }
 .movie-container .card::after, .movie-container .card::before{
@@ -103,56 +78,23 @@
 .card-img-overlay img{
     width: 80px;
 }
-body{
-    overflow-x: hidden;
-}
 .honoring-section .card{
-    position: relative;
-    height: 400px;
     transition: 0.5s;
 }
 .honoring-section .card:hover{
     transform: scale(0.92);
 }
-.card-img-top{
-    height: 100%;
+.object-fit-cover{
     object-fit: cover;
 }
 .card-overlay{
-    position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-}
-.list-group-item{
-    font-size: 13px;
 }
 .media{
     height: 350px;
-    overflow: hidden;
-    object-fit: cover;
 }
-.media-body{
-    height: 340px;
-}
-.line{
-    height: 3px;
-    width: 7%;
-    transition: 0.1s;
-}
-.media:hover .line{
-    width: 10%;
-}
-.instagram-icon i{
-    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.white-line{
-    width: 100%;
+.white-line, .line{
     height: 2px;
-    background-color: #fff;
 }
 

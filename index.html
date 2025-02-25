@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 </head>
-<body>
+<body class="overflow-x-hidden">
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between d-flex fixed-top">
         <div class="left d-flex flex-lg-row flex-column">
@@ -47,9 +47,9 @@
                 <div class="search-login-countainer d-lg-none d-flex align-items-end">
                   <form class="form-inline">
                     <input class="form-control" type="text" placeholder="Search">
-                    <button class="btn btn-danger" type="submit">Search</button>
+                    <button class="btn btn-danger mt-2" type="submit">Search</button>
                     <div class="login">
-                      <button class="btn btn-danger ml-1" type="button" data-toggle="modal" data-target="#myModal">Login</button>
+                      <button class="btn btn-danger ml-1 mt-2" type="button" data-toggle="modal" data-target="#myModal">Login</button>
                     </div> <!-- login -->
                   </form>
                 </div> <!-- navbarSearch -->
@@ -112,32 +112,32 @@
   
           <div class="carousel-inner">
             <div class="carousel-item active w-100">
-              <img src="photos/Casablanca.jpg" alt="Casablanca">
-              <div class="carousel-caption pb-5">
+              <img src="photos/Casablanca.jpg" alt="Casablanca" class="w-100 h-100 object-fit-cover">
+              <div class="carousel-caption rounded pb-5">
                 <h3>Casablanca</h3>
                 <p>"And remember, this gun is pointed right at your heart."</p>
                 <button type="button" class="btn btn-outline-light">Get Tickets</button>
               </div>
             </div>
             <div class="carousel-item w-100">
-              <img src="photos/Dr. Stranglove.jpg" alt="Modern Times">
-              <div class="carousel-caption pb-5">
+              <img src="photos/Dr. Stranglove.jpg" alt="Modern Times" class="w-100 h-100 object-fit-cover">
+              <div class="carousel-caption rounded pb-5">
                 <h3>Dr. Stranglove</h3>
                 <p>"Gentlemen, you can't fight in here! This is the War Room!"</p>
                 <button type="button" class="btn btn-outline-light">Get Tickets</button>
               </div>
             </div>
             <div class="carousel-item w-100">
-              <img src="photos/oppenheimer.jpg" alt="Oppenheimer">
-              <div class="carousel-caption pb-5">
+              <img src="photos/oppenheimer.jpg" alt="Oppenheimer" class="w-100 h-100 object-fit-cover">
+              <div class="carousel-caption rounded pb-5">
                 <h3>Oppenheimer</h3>
                 <p>"You can convince anyone with anything. Even yourself."</p>
                 <button type="button" class="btn btn-outline-light">Get Tickets</button>
               </div>
             </div>
             <div class="carousel-item w-100">
-              <img src="photos/La Dolce Vita.jpg" alt="La Dolce Vita">
-              <div class="carousel-caption pb-5">
+              <img src="photos/La Dolce Vita.jpg" alt="La Dolce Vita" class="w-100 h-100 object-fit-cover">
+              <div class="carousel-caption rounded pb-5">
                 <h3>La Dolce Vita</h3>
                 <p>"You are everything... everything!"</p>
                 <button type="button" class="btn btn-outline-light">Get Tickets</button>
@@ -153,12 +153,12 @@
             <span class="carousel-control-next-icon"></span>
           </a>
         </div>
-        <div class="social-links align-items-center d-flex flex-column mr-4">
-          <a href="#" title="facebook" class="text-secondary"><i class="fa-brands fa-square-facebook"></i></a>
-          <a href="#" title="twitter" class="text-secondary"><i class="fa-brands fa-square-twitter"></i></a>
-          <a href="#" title="instagram" class="text-secondary"><i class="fa-brands fa-square-instagram"></i></a>
-          <a href="#" title="youtube" class="text-secondary"><i class="fa-brands fa-square-youtube"></i></a>
-          <a href="#" title="hotline" class="text-secondary"><i class="fa-solid fa-square-phone"></i></a>
+        <div class="social-links align-items-center d-flex flex-column mr-lg-4 mr-5 position-fixed">
+          <a href="#" title="facebook" class="text-secondary display-4"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="#" title="twitter" class="text-secondary display-4"><i class="fa-brands fa-square-twitter"></i></a>
+          <a href="#" title="instagram" class="text-secondary display-4"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="#" title="youtube" class="text-secondary display-4"><i class="fa-brands fa-square-youtube"></i></a>
+          <a href="#" title="hotline" class="text-secondary display-4"><i class="fa-solid fa-square-phone"></i></a>
         </div>
       </div>
     </section>
@@ -285,16 +285,16 @@
         <div class="title bg-dark text-danger p-3">
           <h2 class="text-center">Curtain Call: the Best of The Cinema</h2>
         </div>
-      </div>
+      </div> <!-- container-fluid -->
       <div class="container movie-container">
         <div class="row justify-content-around">
           <div class="col-lg-4 col-12 mb-4">
             <div class="card shadow">
-              <img class="card-img-top" src="photos/card1.jpg" alt="Casablanca">
+              <img class="card-img-top object-fit-cover" src="photos/card1.jpg" alt="Casablanca">
               <div class="card-body cinema-cards row align-items-center">
                 <div class="card-description col">
-                  <h4 class="card-title">Casablanca (1942)</h4>
-                  <p class="card-text">Romance/Drama</p>
+                  <h6 class="card-title">Casablanca (1942)</h6>
+                  <p class="card-text"><small>Romance/Drama</small></p>
                 </div>
                 <a href="#" class="btn btn-danger col-auto mb-3 mr-2">Get Tickets</a>
               </div>
@@ -302,11 +302,11 @@
           </div>
           <div class="col-lg-4 col-12 mb-4">
             <div class="card shadow">
-              <img class="card-img-top" src="photos/card2.jpg" alt="Citizen Kane">
+              <img class="card-img-top object-fit-cover" src="photos/card2.jpg" alt="Citizen Kane">
               <div class="card-body cinema-cards row align-items-center">
                 <div class="card-description col">
-                  <h4 class="card-title">Citizen Kane (1941)</h4>
-                  <p class="card-text">Drama/Mystery</p>
+                  <h6 class="card-title">Citizen Kane (1941)</h6>                
+                  <p class="card-text"><small>Drama/Mystery</small></p>
                 </div>
                 <a href="#" class="btn btn-danger col-auto mb-3 mr-2">Get Tickets</a>
               </div>
@@ -314,11 +314,11 @@
           </div>
           <div class="col-lg-4 col-12 mb-4">
             <div class="card shadow">
-              <img class="card-img-top" src="photos/card3.jpg" alt="Casablanca">
+              <img class="card-img-top object-fit-cover" src="photos/card3.jpg" alt="Casablanca">
               <div class="card-body cinema-cards row align-items-center">
                 <div class="card-description col">
-                  <h4 class="card-title">Gone with the Wind</h4>
-                  <p class="card-text">Romance/Drama</p>
+                  <h6 class="card-title">Gone with the Wind</h6>
+                  <p class="card-text"><small>Romance/Drama</small></p>
                 </div>
                 <a href="#" class="btn btn-danger col-auto mb-3 mr-2">Get Tickets</a>
               </div>
@@ -328,11 +328,11 @@
         <div class="row justify-content-around">
           <div class="col-lg-4 col-12 mb-4">
             <div class="card shadow">
-              <img class="card-img-top" src="photos/card4.jpg" alt="Casablanca">
+              <img class="card-img-top object-fit-cover" src="photos/card4.jpg" alt="Casablanca">
               <div class="card-body cinema-cards row align-items-center">
                 <div class="card-description col">
-                  <h4 class="card-title">Psycho (1960)</h4>
-                  <p class="card-text">Horror/Thriller</p>
+                  <h6 class="card-title">Psycho (1960)</h6>
+                  <p class="card-text"><small>Horror/Thriller</small></p>
                 </div>
                 <a href="#" class="btn btn-danger col-auto mb-3 mr-2">Get Tickets</a>
               </div>
@@ -340,11 +340,11 @@
           </div> <!-- col -->
           <div class="col-lg-4 col-12 mb-4">
             <div class="card shadow">
-              <img class="card-img-top" src="photos/card5.jpg" alt="Casablanca">
+              <img class="card-img-top object-fit-cover" src="photos/card5.jpg" alt="Casablanca">
               <div class="card-body cinema-cards row align-items-center">
                 <div class="card-description col">
-                  <h4 class="card-title">12 Angry Men (1957)</h4>
-                  <p class="card-text">Drama</p>
+                  <h6 class="card-title">12 Angry Men (1957)</h6>                
+                  <p class="card-text"><small>Drama</small></p>
                 </div>
                 <a href="#" class="btn btn-danger col-auto mb-3 mr-2">Get Tickets</a>
               </div>
@@ -352,11 +352,11 @@
           </div>
           <div class="col-lg-4 col-12 mb-4">
             <div class="card shadow">
-              <img class="card-img-top" src="photos/card6.jpg" alt="Casablanca">
+              <img class="card-img-top object-fit-cover" src="photos/card6.jpg" alt="Casablanca">
               <div class="card-body cinema-cards row align-items-center">
                 <div class="card-description col">
-                  <h4 class="card-title">Metropolis (1927)</h4>
-                  <p class="card-text">Sci-Fi</p>
+                  <h6 class="card-title">Metropolis (1927)</h6>
+                  <p class="card-text"><small>Sci-Fi</small></p>
                 </div>
                 <a href="#" class="btn btn-danger col-auto mb-3 mr-2">Get Tickets</a>
               </div>
@@ -366,11 +366,11 @@
         <div class="row justify-content-around">
           <div class="col-lg-4 col-12 mb-4">
             <div class="card shadow">
-              <img class="card-img-top" src="photos/card7.jpg" alt="Casablanca">
+              <img class="card-img-top object-fit-cover" src="photos/card7.jpg" alt="Casablanca">
               <div class="card-body cinema-cards row align-items-center">
                 <div class="card-description col">
-                  <h4 class="card-title">Singin' in the Rain</h4>
-                  <p class="card-text">Musical/Comedy</p>
+                  <h6 class="card-title">Singin' in the Rain</h6>                
+                  <p class="card-text"><small>Musical/Comedy</small></p>
                 </div>
                 <a href="#" class="btn btn-danger col-auto mb-3 mr-2">Get Tickets</a>
               </div>
@@ -378,11 +378,11 @@
           </div>
           <div class="col-lg-4 col-12 mb-4">
             <div class="card shadow">
-              <img class="card-img-top" src="photos/card8.jpg" alt="Casablanca">
+              <img class="card-img-top object-fit-cover" src="photos/card8.jpg" alt="Casablanca">
               <div class="card-body cinema-cards row align-items-center">
                 <div class="card-description col">
-                  <h4 class="card-title">Some Like It Hot (1959)</h4>
-                  <p class="card-text">Comedy/Romance</p>
+                  <h6 class="card-title">Some Like It Hot (1959)</h6>
+                  <p class="card-text"><small>Comedy/Romance</small></p>
                 </div>
                 <a href="#" class="btn btn-danger col-auto mb-3 mr-2">Get Tickets</a>
               </div>
@@ -390,7 +390,9 @@
           </div>
         </div>
       </div> <!-- movie-container -->
-      <div class="ending-img pb-2"></div>
+      <div class="container-fluid w-100">
+        <div class="ending-img pb-2 w-100"></div>
+      </div>
       <hr>
     </section>
 
@@ -405,8 +407,8 @@
         </div> <!-- jumbotron -->
         <div class="row container mx-auto">
           <div class="col-lg-4 col-12 mb-4">
-            <div class="card">
-              <div class="card-overlay"></div>
+            <div class="card h-100">
+              <div class="card-overlay w-100 h-100 position-absolute"></div>
               <div class="card-img-overlay text-light">
                 <h4>A Visionary Director</h4>
                 <div class="date d-flex align-items-center">
@@ -414,17 +416,17 @@
                   <p class="ml-1 mb-1">1940s</p>
                 </div> <!-- date -->
               </div> <!-- card-img-overlay -->
-              <img class="card-img-top" src="photos/alfred1.png" alt="Alfred Hitchcock">
+              <img class="card-img-top h-100 object-fit-cover" src="photos/alfred1.png" alt="Alfred Hitchcock">
               <div class="card-img-overlay d-flex justify-content-end flex-column text-light">
                 <img src="photos/alfredHitchcock.jpg" alt="Alfred Hitchcock" class="rounded-circle">
-                <h4 class="card-title">Alfred Hitchcock</h4>
-                <p class="card-text">Filmmaker</p>
+                <h5 class="card-title">Alfred Hitchcock</h4>
+             <p class="card-text"><small></small>Filmmaker</p>
               </div> <!-- card-img-overlay -->
             </div> <!-- card -->
           </div> <!-- col -->
           <div class="col-lg-4 col-12 mb-4">
-            <div class="card">
-              <div class="card-overlay"></div>
+            <div class="card h-100">
+              <div class="card-overlay w-100 h-100 position-absolute"></div>
               <div class="card-img-overlay text-light">
                 <h4>A Screen Legend</h4>
                 <div class="date d-flex align-items-center">
@@ -432,17 +434,17 @@
                   <p class="ml-1 mb-1">1950s</p>
                 </div> <!-- date -->
               </div> <!-- card-img-overlay -->
-              <img class="card-img-top" src="photos/Audrey1.jpg" alt="Audrey Hepburn">
+              <img class="card-img-top h-100 object-fit-cover" src="photos/Audrey1.jpg" alt="Audrey Hepburn">
               <div class="card-img-overlay d-flex justify-content-end flex-column text-light">
                 <img src="photos/Audrey.png" alt="Audrey" class="rounded-circle">
-                <h4 class="card-title">Audrey Hepburn</h4>
-                <p class="card-text">Actress</p>
+                <h5 class="card-title">Audrey Hepburn</h4>
+             <p class="card-text"><small></small>Actress</p>
               </div> <!-- card-img-overlay -->
             </div> <!-- card -->
           </div> <!-- col -->
           <div class="col-lg-4 col-12 mb-4">
-            <div class="card">
-              <div class="card-overlay"></div>
+            <div class="card h-100">
+              <div class="card-overlay w-100 h-100 position-absolute"></div>
               <div class="card-img-overlay text-light">
                 <h4>Hollywood's Everyman</h4>
                 <div class="date d-flex align-items-center">
@@ -450,11 +452,11 @@
                   <p class="ml-1 mb-1">1946s</p>
                 </div> <!-- date -->
               </div> <!-- card-img-overlay -->
-              <img class="card-img-top" src="photos/James.jpg" alt="James Stewart">
+              <img class="card-img-top h-100 object-fit-cover" src="photos/James.jpg" alt="James Stewart">
               <div class="card-img-overlay d-flex justify-content-end flex-column text-light">
                 <img src="photos/JamesStewart.png" alt="James Stewart" class="rounded-circle">
-                <h4 class="card-title">James Stewart</h4>
-                <p class="card-text">Actor</p>
+                <h5 class="card-title">James Stewart</h4>
+            <p class="card-text"><small></small>Actor</p>
               </div> <!-- card-img-overlay -->
             </div> <!-- card -->
           </div> <!-- col -->
@@ -467,88 +469,88 @@
         <h2>Today's Picks</h2>
       </div>
       <div class="container p-5">
-        <div class="media border mb-3 d-flex flex-column flex-lg-row shadow rounded">
-          <img src="photos/card1.jpg" alt="John Doe" class="mr-3 h-100 w-25">
-          <div class="media-body p-3 d-flex flex-column justify-content-between media-body-normal">
+        <div class="media border mb-3 d-flex flex-column flex-lg-row shadow rounded overflow-hidden">
+          <img src="photos/card1.jpg" alt="John Doe" class="mr-3 h-100 w-25 object-fit-cover">
+          <div class="media-body p-3 d-flex flex-column h-100 justify-content-between media-body-normal">
             <div class="media-body-content">
               <h4>Casablanca</h4>
-              <div class="date pb-lg-3">
+              <div class="date pb-lg-3 w-50">
                 <div class="date-text pb-1">
-                  <small><i class="fa-solid fa-calendar mr-1"></i>Released on November 26, 1942</small>
+                  <small><i class="fa-solid fa-calendar mr-1"></i>November 26, 1942</small>
                 </div>
-                <div class="line bg-danger"></div>
+                <div class="line bg-danger w-25"></div>
               </div>
               <p>In the midst of WWII, an American expat in Morocco must choose between love and duty when his old flame walks into his café, seeking his help to escape the Nazis. A timeless romance filled with unforgettable lines and suspense.</p>
             </div> <!-- media-body-content -->
-            <div class="list-group list-group-horizontal w-50 text-center pb-4">
-              <a href="#" class="list-group-item list-group-item-action list-group-item-dark w-25 p-1 mr-2 rounded"><i class="fa-solid fa-bookmark mr-1"></i>Save</a>
-              <a href="#" class="list-group-item list-group-item-action list-group-item-dark w-25 p-1 mr-2 rounded"><i class="fa-solid fa-clock mr-1"></i>1h 42m</a>
-              <a href="#" class="list-group-item list-group-item-action list-group-item-dark w-25 p-1 rounded"><i class="fa-solid fa-play mr-1"></i>Play Trailer</a>
+            <div class="list-group list-group-horizontal d-flex w-50 text-center pb-4">
+              <a href="#" class="list-group-item list-group-item-action align-self-center list-group-item-dark w-25 p-1 mr-2 rounded"><small><i class="fa-solid fa-bookmark mr-1"></i>Save</small></a>
+              <a href="#" class="list-group-item list-group-item-action align-self-center list-group-item-dark w-25 p-1 mr-2 rounded"><small><i class="fa-solid fa-clock mr-1"></i>1h 42m</small></a>
+              <a href="#" class="list-group-item list-group-item-action align-self-center list-group-item-dark w-25 p-1 rounded"><small><i class="fa-solid fa-play mr-1"></i>Play Trailer</small></a>
             </div> <!-- list-group -->
           </div> <!-- media-body -->
         </div> <!-- media -->
 
-        <div class="media border mb-3 d-flex flex-column-reverse flex-lg-row media-reverse shadow rounded">
-          <div class="media-body p-3 d-flex flex-column justify-content-between media-body-reverse">
+        <div class="media border mb-3 d-flex flex-column-reverse flex-lg-row media-reverse shadow rounded overflow-hidden">
+          <div class="media-body p-3 d-flex flex-column h-100 justify-content-between media-body-reverse">
             <div class="media-body-content">
               <h4>Singin' in the Rain</h4>
-              <div class="date pb-lg-3">
+              <div class="date pb-lg-3 w-50">
                 <div class="date-text pb-1">
-                  <small><i class="fa-solid fa-calendar mr-1"></i>Released on March 27, 1952</small>
+                  <small><i class="fa-solid fa-calendar mr-1"></i>March 27, 1952</small>
                 </div>
-                <div class="line bg-danger"></div>
+                <div class="line bg-danger w-25"></div>
               </div>
               <p>In the golden age of Hollywood, silent films are fading, and "talkies" are taking over. When a famous silent film star struggles to transition into sound, a talented young actress might just be the key to saving his career—and winning his heart. Packed with dazzling dance numbers, unforgettable songs, and timeless comedy, Singin' in the Rain is a joyful celebration of music, love, and the magic of the movies.</p>
             </div> <!-- media-body-content -->
-            <div class="list-group list-group-horizontal w-50 text-center pb-4">
-              <a href="#" class="list-group-item list-group-item-action list-group-item-dark w-25 p-1 mr-2 rounded"><i class="fa-solid fa-bookmark mr-1"></i>Save</a>
-              <a href="#" class="list-group-item list-group-item-action list-group-item-dark w-25 p-1 mr-2 rounded"><i class="fa-solid fa-clock mr-1"></i>1h 43m</a>
-              <a href="#" class="list-group-item list-group-item-action list-group-item-dark w-25 p-1 rounded"><i class="fa-solid fa-play mr-1"></i>Play Trailer</a>
+            <div class="list-group list-group-horizontal d-flex w-50 text-center pb-4">
+              <a href="#" class="list-group-item list-group-item-action align-self-center list-group-item-dark w-25 p-1 mr-2 rounded"><small><i class="fa-solid fa-bookmark mr-1"></i>Save</small></a>
+              <a href="#" class="list-group-item list-group-item-action align-self-center list-group-item-dark w-25 p-1 mr-2 rounded"><small><i class="fa-solid fa-clock mr-1"></i>1h 43m</small></a>
+              <a href="#" class="list-group-item list-group-item-action align-self-center list-group-item-dark w-25 p-1 rounded"><small><i class="fa-solid fa-play mr-1"></i>Play Trailer</small></a>
             </div> <!-- list-group -->
           </div> <!-- media-body -->
-          <img src="photos/card7.jpg" alt="Singin' in the Rain" class="mr-3 h-100 w-25">
+          <img src="photos/card7.jpg" alt="Singin' in the Rain" class="mr-3 h-100 w-25 object-fit-cover">
         </div> <!-- media-reverse -->
 
-        <div class="media border mb-3 d-flex flex-column flex-lg-row shadow rounded">
-          <img src="photos/Godfather.png" alt="John Doe" class="mr-3 h-100 w-25">
-          <div class="media-body p-3 d-flex flex-column justify-content-between media-body-normal">
+        <div class="media border mb-3 d-flex flex-column flex-lg-row shadow rounded overflow-hidden">
+          <img src="photos/Godfather.png" alt="John Doe" class="mr-3 h-100 w-25 object-fit-cover">
+          <div class="media-body p-3 d-flex flex-column h-100 justify-content-between media-body-normal">
             <div class="media-body-content">
               <h4>The Godfather</h4>
-              <div class="date pb-lg-3">
+              <div class="date pb-lg-3 w-50">
                 <div class="date-text pb-1">
-                  <small><i class="fa-solid fa-calendar mr-1"></i>Released on March 24, 1972</small>
+                  <small><i class="fa-solid fa-calendar mr-1"></i>March 24, 1972</small>
                 </div>
-                <div class="line bg-danger"></div>
+                <div class="line bg-danger w-25"></div>
               </div>
               <p>When the powerful Corleone crime family faces betrayal and shifting loyalties, the youngest son, Michael, is drawn into a world of power, violence, and family duty. As he rises through the ranks, he must choose between the life he wanted and the legacy he can't escape. A cinematic masterpiece of loyalty, ambition, and ruthless power, The Godfather is one of the greatest films ever made.</p>
             </div> <!-- media-body-content -->
-            <div class="list-group list-group-horizontal w-50 text-center pb-4">
-              <a href="#" class="list-group-item list-group-item-action list-group-item-dark w-25 p-1 mr-2 rounded"><i class="fa-solid fa-bookmark mr-1"></i>Save</a>
-              <a href="#" class="list-group-item list-group-item-action list-group-item-dark w-25 p-1 mr-2 rounded"><i class="fa-solid fa-clock mr-1"></i>2h 55m</a>
-              <a href="#" class="list-group-item list-group-item-action list-group-item-dark w-25 p-1 rounded"><i class="fa-solid fa-play mr-1"></i>Play Trailer</a>
+            <div class="list-group list-group-horizontal d-flex w-50 text-center pb-4">
+              <a href="#" class="list-group-item list-group-item-action align-self-center list-group-item-dark w-25 p-1 mr-2 rounded"><small><i class="fa-solid fa-bookmark mr-1"></i>Save</small></a>
+              <a href="#" class="list-group-item list-group-item-action align-self-center list-group-item-dark w-25 p-1 mr-2 rounded"><small><i class="fa-solid fa-clock mr-1"></i>2h 55m</small></a>
+              <a href="#" class="list-group-item list-group-item-action align-self-center list-group-item-dark w-25 p-1 rounded"><small><i class="fa-solid fa-play mr-1"></i>Play Trailer</small></a>
             </div> <!-- list-group -->
           </div> <!-- media-body -->
         </div> <!-- media -->
 
-        <div class="media border mb-3 d-flex flex-column-reverse flex-lg-row media-reverse shadow rounded">
-          <div class="media-body p-3 d-flex flex-column justify-content-between media-body-reverse">
+        <div class="media border mb-3 d-flex flex-column-reverse flex-lg-row media-reverse shadow rounded overflow-hidden">
+          <div class="media-body p-3 d-flex flex-column h-100 justify-content-between media-body-reverse">
             <div class="media-body-content">
               <h4>The Twilight Zone</h4>
-              <div class="date pb-lg-3">
+              <div class="date pb-lg-3 w-50">
                 <div class="date-text pb-1">
-                  <small><i class="fa-solid fa-calendar mr-1"></i>Released on October 2, 1959</small>
+                  <small><i class="fa-solid fa-calendar mr-1"></i>October 2, 1959</small>
                 </div>
-                <div class="line bg-danger"></div>
+                <div class="line bg-danger w-25"></div>
               </div>
               <p>A groundbreaking anthology series that takes viewers into a world where the ordinary meets the extraordinary. Each episode presents a unique story filled with mystery, suspense, and thought-provoking themes, exploring human nature, society, and the unknown. From eerie sci-fi scenarios to unsettling psychological dilemmas, the show blends fantasy, horror, and morality tales, often leaving audiences questioning reality itself.</p>
             </div> <!-- media-body-content -->
-            <div class="list-group list-group-horizontal w-50 text-center pb-4">
-              <a href="#" class="list-group-item list-group-item-action list-group-item-dark w-25 p-1 mr-2 rounded"><i class="fa-solid fa-bookmark mr-1"></i>Save</a>
-              <a href="#" class="list-group-item list-group-item-action list-group-item-dark w-25 p-1 mr-2 rounded"><i class="fa-solid fa-clock mr-1"></i>72h 30m</a>
-              <a href="#" class="list-group-item list-group-item-action list-group-item-dark w-25 p-1 rounded"><i class="fa-solid fa-play mr-1"></i>Play Trailer</a>
+            <div class="list-group list-group-horizontal d-flex w-50 text-center pb-4">
+              <a href="#" class="list-group-item list-group-item-action align-self-center list-group-item-dark w-25 p-1 mr-2 rounded"><small><i class="fa-solid fa-bookmark mr-1"></i>Save</small></a>
+              <a href="#" class="list-group-item list-group-item-action align-self-center list-group-item-dark w-25 p-1 mr-2 rounded"><small><i class="fa-solid fa-clock mr-1"></i>72h 30m</small></a>
+              <a href="#" class="list-group-item list-group-item-action align-self-center list-group-item-dark w-25 p-1 rounded"><small><i class="fa-solid fa-play mr-1"></i>Play Trailer</small></a>
             </div> <!-- list-group -->
           </div> <!-- media-body -->
-          <img src="photos/twilightzone.jpg" alt="The Twilight Zone" class="mr-3 h-100 w-25">
+          <img src="photos/twilightzone.jpg" alt="The Twilight Zone" class="mr-3 h-100 w-25 object-fit-cover">
         </div> <!-- media-reverse -->
       </div> <!-- container -->
     </section>
@@ -570,7 +572,7 @@
         </div>
         <div class="social2 border shadow px-5 py-3 text-center w-75 mx-lg-4 mx-5 my-2">
           <h3>Follow Us</h3>
-          <a href="https://www.instagram.com" rel="noopener" title="instagram" class="display-4 instagram-icon"><i class="fa-brands fa-instagram mb-3"></i></a>
+          <a href="https://www.instagram.com" rel="noopener" title="instagram" class="display-4 text-danger"><i class="fa-brands fa-instagram mb-3"></i></a>
           <h5>Visit Now</h5>
         </div>
         <div class="social3 border shadow px-5 py-3 text-center w-75 mx-lg-4 mx-5 my-2">
@@ -585,12 +587,12 @@
       <div class="container-fluid bg-dark text-light py-4 px-0">
         <div class="footer-links d-flex flex-column flex-lg-row justify-content-lg-around align-items-center pb-3">
           <div class="footer-link w-75 mx-2">
-            <div class="white-line mb-1"></div>
+            <div class="white-line bg-light mb-1 w-100"></div>
             <div class="title d-flex justify-content-center p-3">
               <img src="photos/fotor-ai-2025021422433.jpg" class="rounded-circle mr-2" alt="logo" width="35">
               <h4>The Studio</h4>
             </div> <!-- title -->
-            <div class="white-line mb-3"></div>
+            <div class="white-line bg-light mb-3 w-100"></div>
             <div class="links text-center">
               <ul class="list-unstyled">
                 <li>Telephone: 00000000000</li>
@@ -600,12 +602,12 @@
             </div> <!-- links -->
           </div> <!-- footer-link -->
           <div class="footer-link w-75 mx-2">
-            <div class="white-line mb-1"></div>
+            <div class="white-line bg-light mb-1 w-100"></div>
             <div class="title d-flex justify-content-center p-3">
               <img src="photos/fotor-ai-2025021422433.jpg" class="rounded-circle mr-2" alt="logo" width="35">
               <h4>Now Showing</h4>
             </div> <!-- title -->
-            <div class="white-line mb-3"></div>
+            <div class="white-line bg-light mb-3 w-100"></div>
             <div class="links text-center">
               <ul class="list-unstyled">
                 <li><a href="#" class="text-danger text-decoration-none">Explore Our Collection</a></li>
@@ -615,12 +617,12 @@
             </div> <!-- links -->
           </div> <!-- footer-link -->
           <div class="footer-link w-75 mx-2">
-            <div class="white-line mb-1"></div>
+            <div class="white-line bg-light mb-1 w-100"></div>
             <div class="title d-flex justify-content-center p-3">
               <img src="photos/fotor-ai-2025021422433.jpg" class="rounded-circle mr-2" alt="logo" width="35">
               <h4>Our Reel Vision</h4>
             </div> <!-- title -->
-            <div class="white-line mb-3"></div>
+            <div class="white-line bg-light mb-3 w-100"></div>
             <div class="links text-center">
               <ul class="list-unstyled">
                 <li>Movies for Everyone</li>
@@ -630,11 +632,11 @@
             </div> <!-- links -->
           </div> <!-- footer-link -->
         </div> <!-- footer-links -->
-        <div class="white-line"></div>
+        <div class="white-line bg-light w-100"></div>
         <div class="footer-copyright py-3 px-2">
           <h5 class="text-center">Copyright &copy; 2023 CineLuxe / All Rights Reserved</h5>
         </div> <!-- footer-copyright -->
-        <div class="white-line mb-5"></div>
+        <div class="white-line bg-light mb-5 w-100"></div>
       </div>
     </footer>
 
